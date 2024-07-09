@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 export const dbConnection = () => {
   mongoose
-    .connect(process.env.MONGO_URI, {
+    .connect(mongodb+srv://hospital:hospital@cluster0.gqhpcdg.mongodb.net/?retryWrites=true, {
       dbName: "PROJECT 0",
     })
     .then(() => {
